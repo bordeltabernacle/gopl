@@ -3,14 +3,9 @@ package main
 import (
 	"fmt"
 	"os"
-	"strconv"
+	"strings"
 )
 
 func main() {
-	s, sep := "", ""
-	for i, arg := range os.Args[1:] {
-		s += sep + strconv.Itoa(i+1) + ": " + arg
-		sep = " "
-	}
-	fmt.Println(s)
+	fmt.Println(strings.Join(os.Args[1:], " "))
 }
