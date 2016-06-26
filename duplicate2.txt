@@ -1,0 +1,6 @@
+single
+double
+double
+triple
+triple
+triple
